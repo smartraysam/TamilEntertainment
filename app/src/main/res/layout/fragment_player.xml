@@ -1,0 +1,275 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.softDev.tamilentertainment.fragment.PlayerFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.google.android.gms.ads.NativeExpressAdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="bottom"
+        android:contextClickable="true"
+        ads:adSize="300x138"
+        ads:adUnitId="@string/native_AdunitID"
+        tools:adUnitId="@string/banner_home_footer"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="547dp"></com.google.android.gms.ads.NativeExpressAdView>
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:minWidth="255dp"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/titleTextView"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="5dp"
+            android:background="#555555" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/stationImageView"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/station_default" />
+
+        <TextView
+            android:id="@+id/artistTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:text="Artist"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/trackTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/view"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/view"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="Current Playing Track"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/albumTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:gravity="right"
+            android:paddingRight="20dp"
+            android:text="Album"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="240dp"
+            android:paddingBottom="5dp"
+            android:text="@string/status_noconnection"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="290dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:textAlignment="center">
+
+            <Button
+                android:id="@+id/PreviousButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/StopButton"
+                android:layout_alignBottom="@+id/StopButton"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_previous"
+                android:gravity="center"
+                android:paddingLeft="50dp" />
+
+            <Button
+                android:id="@+id/NextButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/PreviousButton"
+                android:layout_alignBottom="@+id/PreviousButton"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/titleTextView"
+                android:layout_toRightOf="@+id/titleTextView"
+                android:background="@drawable/btn_next"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/PlayButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/vol"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/titleTextView"
+                android:layout_toStartOf="@+id/titleTextView"
+                android:layout_weight="0.00"
+                android:background="@drawable/btn_play"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/StopButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:layout_alignBottom="@+id/stationImageView"
+                android:layout_alignEnd="@+id/albumTextView"
+                android:layout_alignRight="@+id/albumTextView"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_stop"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/PauseButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/PlayButton"
+                android:layout_alignBottom="@+id/PlayButton"
+                android:layout_alignEnd="@+id/trackTextView"
+                android:layout_alignRight="@+id/trackTextView"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_pause"
+                android:gravity="center"
+                android:paddingRight="30dp" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/vol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="260dp"
+            android:src="@drawable/icon_volume" />
+
+        <SeekBar
+            android:id="@+id/volumebar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="260dp"
+            android:layout_toEndOf="@+id/vol"
+            android:layout_toRightOf="@+id/vol"
+            android:paddingLeft="5dp" />
+
+        <Button
+            android:id="@+id/favouritedisable"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/favouriteImg"
+            android:layout_alignLeft="@+id/favouriteImg"
+            android:layout_alignStart="@+id/favouriteImg"
+            android:layout_below="@+id/stationImageView"
+            android:background="@drawable/favouritedisable"
+            android:backgroundTint="@color/colorLighter" />
+
+        <Button
+            android:id="@+id/offSetTime"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/offsleep" />
+
+        <Button
+            android:id="@+id/OnsetTime"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/onsleep" />
+
+        <Button
+            android:id="@+id/favouriteImg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/stationImageView"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/favouriteenable" />
+
+        <TextView
+            android:id="@+id/sleepTimeval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/offSetTime"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/titleTextView"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/stationImageView"
+            android:layout_toRightOf="@+id/stationImageView"
+            android:gravity="right|center_horizontal"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.softDev.tamilentertainment.activity.MainActivity">
+    <!--
+       <android.support.v7.widget.Toolbar
+           android:id="@+id/toolbar"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/abc_action_bar_default_height_material"
+           android:background="?attr/colorPrimary"
+           android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+        -->
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Real content goes here
+            <FrameLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            -->
+        <include layout="@layout/content_main" />
+
+        <!-- The navigation drawer -->
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@android:color/black"
+            android:fitsSystemWindows="false"
+            android:foregroundGravity="bottom"
+            app:itemIconTint="@color/colorWhite"
+            app:itemTextColor="@color/colorWhite"
+            app:menu="@menu/activity_main_drawer" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

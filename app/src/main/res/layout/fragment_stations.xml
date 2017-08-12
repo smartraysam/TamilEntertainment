@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.softDev.tamilentertainment.fragment.StationsFragment">
+
+    <FrameLayout
+        android:id="@+id/list_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <GridView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="false"
+            android:numColumns="3"
+            android:visibility="visible" />
+
+        <!-- Here is the view to show if the list is emtpy -->
+
+        <TextView
+            android:id="@+id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No items."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/load"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="bottom"
+        android:contextClickable="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_AdunitID"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="547dp"></com.google.android.gms.ads.AdView>
+</RelativeLayout>

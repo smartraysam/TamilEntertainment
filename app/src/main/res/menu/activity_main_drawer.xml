@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/one" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_36dp"
+            android:title="@string/radio_home" />
+    </group>
+    <group android:id="@+id/wo" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_stations"
+            android:icon="@drawable/stationlist"
+            android:title="@string/radio_stations" />
+    </group>
+    <group android:id="@+id/three" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_favourites"
+            android:icon="@drawable/rating_favorite"
+            android:title="@string/radio_favourites" />
+    </group>
+    <group android:id="@+id/eight" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_setsleep"
+            android:icon="@drawable/settime"
+            android:title="@string/radio_setsleep" />
+    </group>
+    <group android:id="@+id/five" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/social_share"
+            android:title="@string/radio_send" />
+    </group>
+
+    <group android:id="@+id/six" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_review"
+            android:icon="@drawable/rating_important"
+            android:title="@string/radio_review" />
+    </group>
+    <group android:id="@+id/seven" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_exit_to_app_black_36dp"
+            android:title="@string/exit_radio" />
+    </group>
+
+</menu>

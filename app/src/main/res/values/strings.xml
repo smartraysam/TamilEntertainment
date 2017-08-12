@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Tamil Entertainment</string>
+    <string name="title_activity_music">Tamil Entertainment</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="adele_hello">Playing now Hello by Adele</string>
+    <string name="radio_home">Home</string>
+    <string name="radio_stations">Stations</string>
+    <string name="radio_favourites">Favourite stations</string>
+    <string name="radio_send">Share App</string>
+    <string name="radio_review">Review App</string>
+    <string name="radio_setsleep">Set Sleep Time</string>
+    <string name="radio_chat">Tamil chat</string>
+    <string name="exit_radio">Exit</string>
+    <string name="banner_AdunitID">ca-app-pub-6825492703069835/5942341302</string>
+    <string name="Reward_AdunitID">ca-app-pub-6825492703069835/9788940286</string>
+    <string name="Interstitial_AdunitID">ca-app-pub-6825492703069835/9653208910</string>
+    <string name="Admod_AppID">ca-app-pub-6825492703069835~4465608104</string>
+    <string name="native_AdunitID">ca-app-pub-6825492703069835/5953459447</string>
+    <string name="is_display_ad">true</string>
+    <string name="admob_publisher_id">pub-6825492703069835</string> <!-- Enter your AdMob Publisher ID -->
+    <string name="lastfm_api_key">7fb78a81b20bee7cb6e8fad4cbcb3694</string> <!-- Enter your Last.fm API Key -->
+    <string name="favorites">Favorites</string>
+    <string name="rta_dialog_title">Rate this app</string>
+    <string name="rta_dialog_message">If you enjoy using this app, would you mind taking a moment to rate it? It won\'t take more than a minute. Thank you for your support!</string>
+    <string name="rta_dialog_ok">Rate now</string>
+    <string name="rta_dialog_cancel">Later</string>
+    <string name="rta_dialog_no">No, thanks</string>
+    <string-array name="station_names">
+        
+        <item>A R Rahman radio</item>
+        <item>ARR Lite radio</item>
+        <item>Harris Jayaraj radio</item>
+        <item>Ilayaraja lite radio</item>
+        <item>Ilayaraja radio</item>
+        <item>K. J. Yesudas radio</item>
+        <item>Puthu paddal radio</item>
+        <item>SPB radio</item>
+        <item>Tamil Lite radio</item>
+        <item>YSR radio</item>
+    </string-array>
+    <string-array name="station_urls">
+       
+        <item>http://66.55.145.43:7770</item>
+        <item>http://66.55.145.43:7842</item>
+        <item>http://66.55.145.43:7812</item>
+        <item>http://66.55.145.43:7846</item>
+        <item>http://66.55.145.43:7763</item>
+        <item>http://66.55.145.43:7834</item>
+        <item>http://66.55.145.43:7759</item>
+        <item>http://66.55.145.43:7808</item>
+        <item>http://66.55.145.43:7830</item>
+        <item>http://66.55.145.43:7838</item>
+    </string-array>
+    <string-array name="station_types">
+        <item>mp3</item>
+        <item>mp3</item>
+        <item>mp3</item>    <!-- mp3 or aac -->
+        <item>mp3</item>
+        <item>mp3</item>
+        <item>mp3</item>
+        <item>mp3</item>
+        <item>mp3</item>    <!-- mp3 or aac -->
+        <item>mp3</item>
+        <item>mp3</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="recently_played_songs">Recently Played Songs</string>
+    <string name="hello">Someone Like You</string>
+    <string name="adele">Adele</string>
+    <string name="your_playlists">Your Playlists</string>
+    <string name="let_me_go">Let Me Go</string>
+
+</resources>
